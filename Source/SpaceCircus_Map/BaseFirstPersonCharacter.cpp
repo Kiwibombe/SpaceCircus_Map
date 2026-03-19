@@ -15,8 +15,6 @@ ABaseFirstPersonCharacter::ABaseFirstPersonCharacter()
 void ABaseFirstPersonCharacter::BeginPlay()
 {
 	Super::BeginPlay();
-
-	GetOwner()->OnTakeAnyDamage.AddDynamic(this, &ABaseFirstPersonCharacter::TakeDamage);
 	
 }
 
